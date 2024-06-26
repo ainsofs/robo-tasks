@@ -1,0 +1,23 @@
+# Composer dependencies
+/vendor/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Node modules (if you use Node.js)
+/node_modules/
+
+# Logs and environment files
+*.log
+.env
+
+# PHPStorm specific files
+.idea/
+
+# PHPUnit
+.phpunit.result.cache
+
+# Robo generated files
+/tmp/
+

@@ -1,0 +1,24 @@
+{
+    "name": "ainsofs/robo-tasks",
+    "description": "A Robo tasks package for Git tag management",
+    "type": "library",
+    "require": {
+        "php": ">=7.2",
+        "consolidation/robo": "^3.0"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Ainsofs\\RoboTasks\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ainsof So'o",
+            "email": "ainsof.soo@gmail.com"
+        }
+    ],
+    "extra": {
+        "bin": ["RoboFile.php"]
+    }
+}
