@@ -4,7 +4,7 @@ namespace Ainsofs\RoboTasks;
 
 class TagManager
 {
-    public function createTag($increment = 'patch')
+    public function createTag($increment = 'patch', $overrideDrupalVersion = null)
     {
         if ($this->hasTagForLatestCommit()) {
             echo "A tag already exists for the latest commit. No new tag will be created.\n";
@@ -19,6 +19,11 @@ class TagManager
         }
 
         list($drupalVersion, $appVersion) = explode('-', $latestTag);
+
+        if ($overrideDrupalVersion !== null) {
+            $drupalVersion = $overrideDrupalVersion;
+        }
+
         $newAppVersion = $this->incrementVersion($appVersion, $increment);
         $newTag = "$drupalVersion-$newAppVersion";
 
